@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MegaCine - Lista</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <header>
+            <h1>MegaCine</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="lista.html">Ver peliculas</a></li>
+                    <li><a href="detalle.html">Pelicula destacada</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class ="detalle-pelicula">
+                <article>
+                    <h2>Terminator</h2>
+                    <p><strong>Sinopsis</strong></p>Una guerra entre la humanidad y la inteligencia artificial que se llama skynet y luchan por cambiar el destino mediantes viajes en el tiempo
+                    <p><strong>Director</strong></p>James Cameron
+                </article>
+            </section>
+ 
+                <aside class="comentarios">
+                    <h3>Dejar su opinion</h3>
+                    <form action="#">
+                        <label for="usuario">Tu nombre</label>
+                        <input type="text" id="usuario" name="usuario" placeholder="Salomon" required>
+
+                        <label for="comentario">Comentario:</label>
+                        <textarea id="comentario" name="comentario" placeholder="¿que opinas de la pelicula?" required></textarea>
+
+                        <button type="submit">Enviar la reseña</button>
+
+                    </form>
+                </aside>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Megacine</p>
+        </footer>
+    </body>
+    </html>
