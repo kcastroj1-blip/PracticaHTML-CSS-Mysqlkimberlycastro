@@ -1,0 +1,152 @@
+:root {
+    --fondo-oscuro: #121212;
+    --fondo-tarjeta: #1e1e1e;
+    --color-principal: #e50914; 
+    --color-texto: #ffffff;
+    --color-gris: #aaaaaa;
+    --fuente-principal: Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--fondo-oscuro);
+    color: var(--color-texto);
+    font-family: var(--fuente-principal);
+    line-height: 1.6;
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--fondo-tarjeta);
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 3px solid var(--color-principal);
+}
+
+header h1 {
+    margin-bottom: 1rem;
+    color: var(--color-principal);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+nav a {
+    color: var(--color-texto);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--color-principal);
+}
+
+
+main {
+    flex: 1; 
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+section {
+    background-color: var(--fondo-tarjeta);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+h2, h3 {
+    margin-bottom: 1rem;
+    color: var(--color-principal);
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #dddddd;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+th {
+    background-color: var(--color-principal);
+    color: white;
+}
+
+tbody tr:hover {
+    background-color: #2a2a2a;
+}
+
+
+.comentarios {
+    margin-top: 2rem;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #2b2b2b;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--color-principal);
+}
+
+button {
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-start; 
+}
+
+button:hover {
+    background-color: #b81d24;
+}
+
+
+footer {
+    background-color: var(--fondo-tarjeta);
+    text-align: center;
+    padding: 1rem;
+    color: var(--color-gris);
+    font-size: 0.9rem;
+}
